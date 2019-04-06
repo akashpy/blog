@@ -21,6 +21,6 @@ from abblog.views import bday
 urlpatterns = [
     path('admin/', admin.site.urls),
     #url(r'^$', bday, name='bday'),
-    path('aablog/', include('abblog.urls')),
+    path('abblog/', include('abblog.urls')),
 
 ]

@@ -6,4 +6,4 @@ from django.template import loader
 def bday(request):
 
     #template = loader.get_template('index.html')
-    return render(request,'abblog/index.html')
+    return render(request,'abblog/index.html',{})

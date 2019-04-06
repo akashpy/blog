@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls import url
-from abblog import views
+from abblog.views import bday
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^wish/$', views.bday, name='bday'),
+    url(r'^$', bday, name='bday'),
 
 ]

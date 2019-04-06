@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls import url
-from abblog.views import bday
+from abblog import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('abblog.urls')),
-    #url('bday/', bday , name='bday'),
+
+    url('wish/', views.bday , name='bday'),
 
 ]

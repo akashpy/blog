@@ -20,6 +20,6 @@ from abblog import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('wish/', views.bday, name='bday'),
+    url(r'^wish/$', views.bday, name='bday'),
 
 ]

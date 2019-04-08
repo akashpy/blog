@@ -6,7 +6,7 @@ from django.template import loader
 def bday(request):
 
     #template = loader.get_template('index.html')
-    return render(request,'abblog/index.html')
+    return render(request,'abblog/index.html', {})
 
-def post_list(request):
-    return render(request, 'abblog/post_list.html', {})
+#def post_list(request):
+ #   return render(request, 'abblog/post_list.html', {})

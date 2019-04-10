@@ -10,3 +10,8 @@ def bday(request):
 
 #def post_list(request):
  #   return render(request, 'abblog/post_list.html', {})
+
+def sherlock(request):
+
+    #template = loader.get_template('index.html')
+    return render(request,'abblog/sherlock.html', {})

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+
+            .container {
+            position: relative;
+            }
+
+            .centered {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             font-size: 60px;
+             color: Gray;
+            }
+
+            .bottom-right {
+             position: absolute;
+             bottom: 8px;
+             right: 16px;
+             font-size: 35px;
+             color: Gray;
+             }
+        </style>
+        </head>
+        <body>
+
+            <div class="container">
+
+
+            {% load static %}
+            <img src="{% static 'abblog/shwall.jpg' %}" alt="Snow" style="width:100%;"/>
+            <div class="centered">The Game Is On</div>
+            <div class="bottom-right">AB website coming up soon...</div>
+
+
+
+            </div>
+
+        </body>
+    </html>
